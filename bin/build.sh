@@ -33,3 +33,6 @@ docker build -t $aws_ecr_repository_url_with_tag $build_folder
 
 # Push image
 docker push $aws_ecr_repository_url_with_tag
+
+# Wait for image to be available
+sleep 10
